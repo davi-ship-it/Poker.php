@@ -81,18 +81,18 @@ class JuegoDePoker {
 
 function mostrarReglasPoker() {
     $reglas = [
-        "Escalera de Color (Straight Flush)" => "Cinco cartas consecutivas del mismo palo.",
-        "Póker (Four of a Kind)" => "Cuatro cartas del mismo valor.",
-        "Full House" => "Tres cartas de un valor y dos de otro valor.",
-        "Color (Flush)" => "Cinco cartas del mismo palo, no consecutivas.",
-        "Escalera (Straight)" => "Cinco cartas consecutivas de diferentes palos.",
-        "Trío (Three of a Kind)" => "Tres cartas del mismo valor.",
-        "Doble Pareja (Two Pair)" => "Dos pares de cartas de diferentes valores.",
-        "Pareja (One Pair)" => "Dos cartas del mismo valor.",
-        "Carta Alta (High Card)" => "Cuando no se forma ninguna de las manos anteriores, gana la carta más alta."
+        "Escalera de Color (Straight Flush)" => "Cinco cartas consecutivas del mismo palo.\n",
+        "Póker (Four of a Kind)" => "Cuatro cartas del mismo valor.\n",
+        "Full House" => "Tres cartas de un valor y dos de otro valor.\n",
+        "Color (Flush)" => "Cinco cartas del mismo palo, no consecutivas.\n",
+        "Escalera (Straight)" => "Cinco cartas consecutivas de diferentes palos.\n",
+        "Trío (Three of a Kind)" => "Tres cartas del mismo valor.\n",
+        "Doble Pareja (Two Pair)" => "Dos pares de cartas de diferentes valores.\n",
+        "Pareja (One Pair)" => "Dos cartas del mismo valor.\n",
+        "Carta Alta (High Card)" => "Cuando no se forma ninguna de las manos anteriores, gana la carta más alta.\n"
     ];
 
-    echo "Reglas del Póquer (de mayor a menor valor):\n\n";
+    echo "\nReglas del Póker (de mayor a menor valor):\n\n";
 
     // Recorrer el array y mostrar cada regla
     foreach ($reglas as $mano => $descripcion) {
@@ -100,7 +100,7 @@ function mostrarReglasPoker() {
     }
 
     echo "\nNota: En caso de empate en la combinación, gana la mano con las cartas de mayor valor.\n";
-    echo "El orden de valor de las cartas (de mayor a menor) es: A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2.\n";
+    echo "El orden de valor de las cartas (de mayor a menor) es: A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2.\n\n";
 }
 
 // Llamar a la función para mostrar las reglas
